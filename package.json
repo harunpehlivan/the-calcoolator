@@ -9,14 +9,17 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "dependencies": {
     "gh-pages": "^1.2.0",
     "npm": "^6.1.0",
     "react": "^16.4.0",
     "react-dom": "^16.4.0",
-    "react-scripts": "1.1.4"
+    "react-scripts": "1.1.4",
+    "snyk": "^1.230.5"
   },
   "keywords": [
     "calculator",
@@ -24,5 +27,6 @@
     "freecodecamp",
     "calcoolator"
   ],
-  "author": "spaniardDev"
+  "author": "spaniardDev",
+  "snyk": true
 }
